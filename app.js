@@ -5,7 +5,7 @@ async function getData(e) {
   e.preventDefault();
   const postcodeValue = document.getElementById('input');
   const postcode = postcodeValue.value;
-  const BASE_URL = `https://cors-anywhere.herokuapp.com/https://www.lockdownapi.com/${postcode}`;
+  const BASE_URL = `https://www.lockdownapi.com/${postcode}`;
   const res = await fetch(`${BASE_URL}`);
   const json = await res.json();
   showData(json);
