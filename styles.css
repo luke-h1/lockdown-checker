@@ -17,25 +17,22 @@ header {
   padding: 20px;
 }
 
-header h1 a { 
+header h1 a {
   text-decoration: none;
   color: #fff;
 }
 
-header h3 { 
+header h3 {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-header h3 a { 
+header h3 a {
   text-decoration: none;
   color: #fff;
   cursor: pointer;
 }
-
-
-
 
 .intro {
   margin-top: 1.5em;
@@ -73,7 +70,7 @@ header h3 a {
   font-size: 20px;
   border-radius: 15px;
   width: 100%;
-  outline:0;
+  outline: 0;
 }
 
 .submit-btn {
@@ -90,62 +87,66 @@ header h3 a {
 
 .list {
   margin-top: 2em;
-  text-align: center;
   list-style-type: none;
 }
 
 .collection-item {
   margin-top: 5px;
   margin-bottom: 5px;
-  font-size: 25px;
-
-} 
+  font-size: 18px;
+  color: #fff;
+}
 .card {
-  width: 500px;
-  height: 350px;
+  width: 450px;
+  height: 550px;
   margin-top: 2em;
-  background-color: #cbc0d3;
+  background-color: #000;
   border-radius: 20px;
+  color: #fff;
 }
 
-.card-title { 
+.card-title {
+  color: #fff;
   text-align: center;
   margin-bottom: 15px;
 }
 
-.card-title-secondary {  
-  text-align: center; 
-} 
-
-/* about page */
-.about-wrapper { 
+.card-title-secondary {
   text-align: center;
-  justify-content: center;
-  align-items: center;  
-  display: flex;
-  flex-direction: column;
-
+  color: #fff;
 }
 
-.about-title a { 
+/* about page */
+.about-wrapper {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-title a {
   text-decoration: none;
   color: #fff;
 }
 
-
-.about-wrapper h1 { 
+.about-wrapper h1 {
   margin-bottom: 1em;
 }
 
-.about-wrapper p { 
+.about-wrapper p {
   margin-top: 3em;
   word-wrap: wrap;
   width: 50%;
   text-align: center;
-
 }
 
-i:hover { 
-  color: #8EF9F3;
+i:hover {
+  color: #8ef9f3;
   cursor: pointer;
+}
+
+.status {
+  font-weight: 700;
+  color: #fff;
 }

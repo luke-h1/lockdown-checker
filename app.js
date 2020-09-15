@@ -17,14 +17,13 @@ function showData(json) {
   <h1 class="card-title">${json.admindistrictname}</h1> 
   <h1 class="card-title-secondary">${json.councilname}</h1>
   <ul class="list">
-    <li class="collection-item">LockDown Status: ${json.lockdownstatus}</li>
-    <li class="collection-item">Non-essential Shops: ${json.nonessentialshops}</li>
-    <li class="collection-item">Two HouseHolds: ${json.twohouseholds}</li>
-    <li class="collection-item">Gym & Fitness: ${json.gymsandfitness}</li>
-    <li class="collection-item">Meet Outdoors: ${json.meetoutdoors}</li>
-    <li class="collection-item">Pubs + Restaurants: ${json.pubsandrestuarants}</li>
-
-  </ul>`;
+  <li class="collection-item">LockDown Status: <br><span class="status">${json.lockdownstatus}</span><br><hr>
+    <li class="collection-item">Non-essential Shops:<br> <span class="status">${json.nonessentialshops}</span></li><br><hr>
+    <li class="collection-item">Two HouseHolds: <br><span class="status">${json.twohouseholds}</span></li><br><hr>
+    <li class="collection-item">Gym & Fitness: <br><span class="status">${json.gymsandfitness}</span></li><br><hr>
+    <li class="collection-item">Meet Outdoors: <br><span class="status">${json.meetoutdoors}</span></li><br><hr>
+    <li class="collection-item">Pubs + Restaurants: <br><span class="status">${json.pubsandrestuarants}</span></li><br>
+    </ul>`;
   outputDiv.innerHTML = output;
 }
 
