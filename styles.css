@@ -85,17 +85,6 @@ header h3 a {
   transform: scale(0.95);
 }
 
-.list {
-  margin-top: 2em;
-  list-style-type: none;
-}
-
-.collection-item {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: #000;
-}
 .card {
   width: 450px;
   height: 550px;
@@ -114,6 +103,22 @@ header h3 a {
 .card-title-secondary {
   text-align: center;
   color: #000;
+}
+
+.bad { 
+  color: red;
+}
+
+
+.good { 
+  color: green; 
+}
+
+
+.item { 
+  color: #000; 
+  text-align: center;
+  font-size: 35px;
 }
 
 /* about page */
@@ -150,3 +155,4 @@ i:hover {
   font-weight: 700;
   color: #000;
 }
+

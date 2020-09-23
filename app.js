@@ -16,14 +16,63 @@ function showData(json) {
   output += `
   <h1 class="card-title">${json.admindistrictname}</h1> 
   <h1 class="card-title-secondary">${json.councilname}</h1>
-  <ul class="list">
-  <li class="collection-item">LockDown Status: <br><span class="status">${json.lockdownstatus}</span><br><hr>
-    <li class="collection-item">Non-essential Shops:<br> <span class="status">${json.nonessentialshops}</span></li><br><hr>
-    <li class="collection-item">Two HouseHolds: <br><span class="status">${json.twohouseholds}</span></li><br><hr>
-    <li class="collection-item">Gym & Fitness: <br><span class="status">${json.gymsandfitness}</span></li><br><hr>
-    <li class="collection-item">Meet Outdoors: <br><span class="status">${json.meetoutdoors}</span></li><br><hr>
-    <li class="collection-item">Pubs + Restaurants: <br><span class="status">${json.pubsandrestuarants}</span></li><br>
-    </ul>`;
+
+  <p class="item"> LockDown Status: 
+  ${
+    json.lockdowstatus === 'areaofconcern' ||
+    'areaofintervention' ||
+    'nationlockdown'
+      ? `<span class="bad">${json.lockdownstatus}</span>`
+      : `<span class="good">${json.lockdownstatus}</span>`
+  }   
+</p> 
+
+<p class="item">
+Non Essential Shops: 
+${
+  json.nonessentialshops === 'false'
+    ? `<span class="bad">${json.nonessentialshops}</span>`
+    : `<span class="good">${json.nonessentialshops}</span>`
+}  
+</p>
+
+<p class="item"> 
+Two HouseHolds: 
+${
+  json.twohouseholds === 'false'
+    ? `<span class="bad">${json.twohouseholds}</span>`
+    : `<span class="good">${json.twohouseholds}</span>`
+}
+</p> 
+
+<p class="item"> 
+Gyms & Fitness : 
+${
+  json.gymsandfitness === 'false'
+    ? `<span class="bad">${json.gymsandfitness}</span>`
+    : `<span class="good">${json.gymsandfitness}</span>`
+}
+</p> 
+
+<p class="item">
+Meet Outdoors : 
+${
+  json.meetoutdoors === 'false'
+    ? `<span class="bad">${json.meetoutdoors}</span>`
+    : `<span class="good">${json.meetoutdoors}</span> `
+}
+</p>
+
+<p class="item"> 
+Pubs & Restaurants : 
+${
+  json.pubsandrestuarants === 'false'
+    ? `<span class="bad">${json.pubsandrestuarants}</span>`
+    : `<span class="good">${json.pubsandrestuarants}</span>`
+}
+</p>
+
+`;
   outputDiv.innerHTML = output;
 }
 
