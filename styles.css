@@ -94,15 +94,15 @@ header h3 a {
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 18px;
-  color: #fff;
+  color: #000;
 }
 .card {
   width: 450px;
   height: 550px;
   margin-top: 2em;
-  background-color: #000;
+  background-color: #fff;
   border-radius: 20px;
-  color: #fff;
+  color: #000;
 }
 
 .card-title {
@@ -113,7 +113,7 @@ header h3 a {
 
 .card-title-secondary {
   text-align: center;
-  color: #fff;
+  color: #000;
 }
 
 /* about page */
@@ -148,5 +148,5 @@ i:hover {
 
 .status {
   font-weight: 700;
-  color: #fff;
+  color: #000;
 }
