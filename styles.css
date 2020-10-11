@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,19 +7,19 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
-  background-color: #000;
-  color: #fff;
+  color: #000;
   text-align: center;
   padding: 20px;
+  font-size: 25px;
 }
 
 header h1 a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 header h3 {
@@ -30,8 +30,18 @@ header h3 {
 
 header h3 a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   cursor: pointer;
+}
+
+.loader {
+  width: 200px;
+  border-radius: 10px;
+  display: none;
+}
+
+.card img {
+  margin-left: 11em;
 }
 
 .intro {
@@ -92,8 +102,7 @@ header h3 a {
   background-color: #fff;
   border-radius: 20px;
   color: #000;
-  background-color: #eee; 
-
+  background-color: #eee;
 }
 
 .card-title {
@@ -132,7 +141,7 @@ header h3 a {
 
 .about-title a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 .about-wrapper h1 {
@@ -144,6 +153,7 @@ header h3 a {
   word-wrap: wrap;
   width: 50%;
   text-align: center;
+  font-size: 25px;
 }
 
 i:hover {
