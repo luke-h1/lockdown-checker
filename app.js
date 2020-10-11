@@ -31,8 +31,8 @@ function showData(json) {
   hideLoader();
   let output = '';
   output += `
-  <h1 class="card-title">${json.admindistrictname}</h1> 
-  <p class="item"> LockDown Status: 
+  <h2 class="card-title">${json.admindistrictname}</h2> 
+  <p class="item"> Watchlist Status: 
   ${
     json.lockdowstatus === 'areaofconcern' ||
     'areaofintervention' ||
@@ -43,47 +43,47 @@ function showData(json) {
 </p> 
 
 <p class="item">
-Non Essential Shops: 
+Are Non Essential Shops open ? :  
 ${
   json.nonessentialshops === 'false'
-    ? `<span class="bad">${json.nonessentialshops}❌</span>`
-    : `<span class="good">${json.nonessentialshops} ✅</span>`
+    ? `<span class="bad"><br> No ❌</span>`
+    : `<span class="good"><br>Yes ✅</span>`
 }  
 </p>
 
 <p class="item"> 
-Two HouseHolds: 
+Can two HouseHolds meet indoors ?:  
 ${
   json.twohouseholds === 'false'
-    ? `<span class="bad">${json.twohouseholds} ❌</span>`
-    : `<span class="good">${json.twohouseholds} ✅</span>`
+    ? `<span class="bad"> <br> No ❌</span>`
+    : `<span class="good"><br>Yes ✅</span>`
 }
 </p> 
 
 <p class="item"> 
-Gyms & Fitness : 
+Are gyms & Fitness centers open ? : 
 ${
   json.gymsandfitness === 'false'
-    ? `<span class="bad">${json.gymsandfitness} ❌</span>`
-    : `<span class="good">${json.gymsandfitness} ✅</span>`
+    ? `<span class="bad"><br> No ❌</span>`
+    : `<span class="good"><br>Yes ✅</span>`
 }
 </p> 
 
 <p class="item">
-Meet Outdoors : 
+Can Two households Meet Outdoors ?: 
 ${
   json.meetoutdoors === 'false'
-    ? `<span class="bad">${json.meetoutdoors} ❌</span>`
-    : `<span class="good">${json.meetoutdoors} ✅</span> `
+    ? `<span class="bad"><br> No ❌</span>`
+    : `<span class="good"><br>Yes ✅</span> `
 }
 </p>
 
 <p class="item"> 
-Pubs & Restaurants : 
+Are Pubs & Restaurants open ? : 
 ${
   json.pubsandrestuarants === 'false'
-    ? `<span class="bad">${json.pubsandrestuarants} ❌</span>`
-    : `<span class="good">${json.pubsandrestuarants} ✅</span>`
+    ? `<span class="bad"><br>No ❌</span>`
+    : `<span class="good"><br>Yes ✅</span>`
 }
 </p>
 
