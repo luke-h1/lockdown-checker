@@ -12,11 +12,13 @@ function hideLoader() {
 
 function clearFields() {
   const postcodeValue = document.getElementById('input');
-  postcodeValue.value = '';
+  postcodeValue.value = ''; 
+  outputDiv.innerHTML = ''; 
 }
 
 async function getData(e) {
   showLoader();
+
   e.preventDefault();
   const postcodeValue = document.getElementById('input');
   const postcode = postcodeValue.value;
